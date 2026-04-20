@@ -1,0 +1,46 @@
+:root {
+    --font-sans-serif: helvetica, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+:before,
+:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #fefcf6;
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+
+.paragraph-section {
+  padding: 20px 10px;
+  max-width: 600px;
+  line-height: 2;
+  color: #333;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  z-index: 10;
+}
+
+.header a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
