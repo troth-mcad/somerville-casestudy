@@ -36,7 +36,11 @@ body {
 }
 
 .container {
-    display:flex;
+    display: flex;
+}
+
+.container img {
+  max-height: fit-content;
 }
 
 
@@ -57,10 +61,18 @@ h2 {
 }
 
 h3 {
-    font-size: px;
+    font-size: 20px;
     line-height: 1.05;
     font-weight: 500;
     margin: 0;
+}
+
+p {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #fefcf6;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 350;
 }
 
 /* body paragraph */
@@ -78,24 +90,23 @@ h3 {
 /* HERO CONTAINER */
 .hero {
   position: relative;
-  height: 100vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   background: url('your-image.jpg') center/cover no-repeat;
   display: flex;
   align-items: flex-end;
   padding: 80px;
 }
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.25);
+video {
+  max-width: 100%;
+  margin: 40px;
   border-radius: 20px;
-  margin: 60px;
 }
 
 .hero-text {
   position: relative;
   max-width: 900px;
+  position: absolute;
 }
 
 .hero h1 {
@@ -104,7 +115,71 @@ h3 {
   font-weight: 500;
   padding: 85px;
   color: white;
-  margin: 0;
+  margin: 40px;
 }
 
 
+/* SERVICES CARD */
+
+.services-card-section {
+  margin: 20px auto;
+  padding: auto;
+  flex: 0 0 auto;
+}
+
+.services_block--image {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  max-width:440px;
+  max-height: 750px;
+}
+
+
+.services_block--image img {
+  display: block;
+  max-width: 100%;
+  border-radius: 15px;
+  object-fit: cover; 
+  transition: transform 0.5s ease; 
+}
+
+.services_block--image:hover img {
+  transform: scale(1.2);
+}
+
+.plus-btn {
+  position: absolute;
+  left:85%;
+  bottom: 4%;
+  width: 45px;
+  height:45px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  color: #e31936;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.plus-btn:hover {
+  transform: scale(1.08);
+  background: #000;
+  color:white;
+
+}
+
+.card-text {
+  margin-top: 34px;
+  max-width: 450px;
+}
+
+.card-text p {
+  font-size: 16px;
+  line-height: 2;
+  color: #4b4749;
+}
