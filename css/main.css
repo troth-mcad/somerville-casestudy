@@ -20,7 +20,31 @@ body {
     font-weight: 300;
 }
 
+/* HEADER DEFAULTS */
 
+h1 {
+  font-size: 65px;
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 0;
+  padding: 1rem;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 1.05;
+    font-weight: 500;
+    margin: 0;
+    padding: 1rem;
+}
+
+h3 {
+    font-size: 25px;
+    line-height: 1.05;
+    font-weight: 600;
+    margin: 0;
+    padding: 1rem;
+}
 
 .paragraph-section {
   padding: 20px 10px;
@@ -29,18 +53,42 @@ body {
   color: #333;
 }
 
-.header {
-  position: absolute;
-  width: 100%;
+
+/* HERO CONTAINER */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('your-image.jpg') center/cover no-repeat;
   display: flex;
-  justify-content: space-between;
-  padding: 30px 60px;
-  z-index: 10;
+  align-items: flex-end;
+  padding: 80px;
 }
 
-.header a {
-  margin-left: 30px;
-  text-decoration: none;
-  font-weight: 300;
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: 60px;
+}
+
+.hero-text {
+  position: relative;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 65px;
+  line-height: 1.05;
+  font-weight: 500;
+  padding: 85px;
+  color: white;
+  margin: 0;
+}
+
+
+.card {
+  flex: 1;
+  min-width: 280px;
 }
 
