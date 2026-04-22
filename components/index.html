@@ -1,136 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content ="ie=edge">
-    <title> Components | Somerville </title>
-    <link rel="stylesheet" href="../css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Components | Somerville</title>
+  <link rel="stylesheet" href="../css/main.css" />
 </head>
-
 <body>
 
-<h3>Typography defaults</h3>
-<div class="divider"></div>
+  <main class="page">
 
-<article class="component">
+    <!-- Typography -->
+    <section class="demo-section">
+      <h3 class="section-title">Typography defaults</h3>
+      <div class="divider"></div>
 
+      <article class="component typography-component">
         <div class="type-grid">
-        <div class="type-card">
+          <div class="type-card">
             <h1>Helvetica Neue Medium</h1>
-            <p><i>Header 1</i></p>
-        </div>
+            <p><em>Header 1</em></p>
+          </div>
 
-        <div class="type-card">
+          <div class="type-card">
             <h2>Helvetica Neue Medium</h2>
-            <p><i>Header 2</i></p>
-        </div>
+            <p><em>Header 2</em></p>
+          </div>
 
-        <div class="type-card">
+          <div class="type-card">
             <h3>Helvetica Neue Medium</h3>
-            <p><i>Header 3</i></p>
+            <p><em>Header 3</em></p>
+          </div>
+
+          <div class="type-card">
+            <p>Helvetica Neue Regular</p>
+            <p><em>Paragraph</em></p>
+          </div>
         </div>
-
-        <div class="type-card">
-            <div class="paragraph-sample">Helvetica Neue Regular</div>
-            <p><i>Paragraph</i></p>
-        </div>
-    </div>
-</article>
-
-<h3>Body Paragraph</h3>
- <div class="divider"></div>
-
-<article class="component">
-    
-    <div class="container">
-        <img
-        srcset="img/paragraph.png 2x"
-        src="img/paragraph.png" 
-        alt="paragraph copy"/>
-    
-        <div class="paragraph-section">
-                <p>
-                    With a growing emphasis on corporate environmental impact, we understand the impact of our work and recognise that our clients' needs are changing.
-                </p>
-                <p>
-                    We have designed a sustainable service for clients who prioritise their commercial impact. The process involves separating and recycling wood, metal and plastics to achieve zero waste to landfill certification.
-                </p>
-                <p>
-                    Sustainable manufacturing makes ecological and commercial sense, so we strive to minimise waste and create efficiencies.
-                </p>
-        </div>
-    </div>
-</article>
-
-<h3>Hero Container</h3>
-<div class="divider"></div>    
-
-<article class="component">
-        <img
-        srcset="img/H1.png 2x"
-        src="img/H1.png" 
-        alt="paragraph copy"/>
-
-    <section class="hero">
-
-    <div class="overlay"></div>
-    <video autoplay="" loop="" playsinline="" aria-hidden="true" poster="https://somervilles.s3-assets.com/Somerville-Homepage-Hero-Poster.jpg" tabindex="-1"
-    srcset="https://somervilles.s3-assets.com/Somerville-Hero-Homepage.mp4 2x">
-    <source src="https://somervilles.s3-assets.com/Somerville-Hero-Homepage.mp4" type="video/mp4">
-    </video>   
-
-
-    <div class="hero-text">
-        <h1>
-        Crafting interiors<br>across
-        the<br>UK, Ireland & beyond
-        </h1>
-    </div>
+      </article>
     </section>
-</article>
 
+    <!-- Body Paragraph -->
+    <section class="demo-section">
+      <h3 class="section-title">Body Paragraph</h3>
+      <div class="divider"></div>
 
-<h3>Services Card</h3>
-<div class="divider"></div> 
-
-<article class="component">
-
-
-    <div class="container">
-        <img
-        srcset="img/services_card.png 2x"
-        src="img/services_card.png" 
-        alt="Services Card"/>
-    
-    <div class="services-card-section">
-        
-        <div class="services_block--image">
-        <img
-            src="../img/fit-out-service-block-img.jpg"
-            alt="Fit Out"
-        />
-
-        <button class="plus-btn" aria-label="Open project">
-            +
-        </button>
+      <article class="component split-layout">
+        <div class="reference-image">
+          <img
+            src="img/paragraph.png"
+            srcset="img/paragraph.png 2x"
+            alt="Paragraph copy example"
+          />
         </div>
 
-        <div class="card-text">
-        <h3>Fit-Out</h3>
-        <p>
-            Creating tailored fit-out solutions for commercial offices, hospitality venues and retail spaces.
-        </p>
+        <div class="paragraph-section">
+          <p>
+            With a growing emphasis on corporate environmental impact, we understand
+            the impact of our work and recognise that our clients' needs are changing.
+          </p>
+          <p>
+            We have designed a sustainable service for clients who prioritise their
+            commercial impact. The process involves separating and recycling wood,
+            metal and plastics to achieve zero waste to landfill certification.
+          </p>
+          <p>
+            Sustainable manufacturing makes ecological and commercial sense, so we
+            strive to minimise waste and create efficiencies.
+          </p>
         </div>
-    </div>
+      </article>
+    </section>
 
-    </div>
+    <!-- Hero -->
+    <section class="demo-section">
+      <h3 class="section-title">Hero Container</h3>
+      <div class="divider"></div>
 
-</article>
+      <article class="component hero-component">
+        <div class="reference-image">
+          <img
+            src="img/H1.png"
+            srcset="img/H1.png 2x"
+            alt="Hero reference"
+          />
+        </div>
 
+        <section class="hero">
 
-    
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            aria-hidden="true"
+            poster="https://somervilles.s3-assets.com/Somerville-Homepage-Hero-Poster.jpg"
+            tabindex="-1"
+          >
+            <source
+              src="https://somervilles.s3-assets.com/Somerville-Hero-Homepage.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <div class="overlay"></div>
+
+          <div class="hero-text">
+            <h1>Crafting interiors<br />across the<br />UK, Ireland &amp; beyond</h1>
+          </div>
+        </section>
+      </article>
+    </section>
+
+    <!-- Services Card -->
+    <section class="demo-section">
+      <h3 class="section-title">Services Card</h3>
+      <div class="divider"></div>
+
+      <article class="component services-component">
+        <div class="reference-image">
+          <img
+            src="img/services-card-section.png"
+            srcset="img/services-card-section.png 2x"
+            alt="Services card reference"
+          />
+        </div>
+
+        <div class="services-card-section">
+          <div class="services-card-image">
+            <img
+              src="../img/fit-out-service-block-img.jpg"
+              alt="Fit-Out"
+            />
+            <button class="plus-btn" aria-label="Open project">+</button>
+          </div>
+
+          <div class="card-text">
+            <h3>Fit-Out</h3>
+            <p>
+              Creating tailored fit-out solutions for commercial offices,
+              hospitality venues and retail spaces.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Buttons -->
+    <section class="demo-section">
+      <h3 class="section-title">Buttons</h3>
+      <div class="divider"></div>
+
+      <article class="component buttons-component">
+        <div class="button-demo">
+          <div class="reference-image">
+            <img
+              src="img/rev-button.png"
+              srcset="img/rev-button.png 2x"
+              alt="Reverse button reference"
+            />
+          </div>
+
+          <div class="button-group">
+            <a href="#" class="btn btn-light">
+              About Us <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="button-demo">
+          <div class="reference-image">
+            <img
+              src="img/header_button.png"
+              srcset="img/header_button.png 2x"
+              alt="Header button reference"
+            />
+          </div>
+
+          <div class="button-group">
+            <a href="#" class="btn btn-dark">
+              Start Your Project <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
 </body>
-
 </html>
-
