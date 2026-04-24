@@ -80,17 +80,18 @@ video {
 
 .type-grid {
   display:grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 32px;
-
+  flex-direction: column;
+  align-items:flex-end;
 }
+
 
 .type-card h1,
 .type-card h2,
 .type-card 
 .paragraph-sample {
   margin:auto;
-  justify-items: end;
   line-height: 1.05;  
 }
 
@@ -106,9 +107,15 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(4vw, 3.2rem);
+  font-size: clamp(1rem, 3vw, 2rem);
   font-weight:450;
 }
+
+h4 {
+  font-size: clamp(1.25rem, 1vw, 2rem);
+  font-weight:450;
+}
+
 
 .paragraph-sample {
   font-size: 15px;
@@ -280,11 +287,11 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 10px 26px;
+  padding: 8px 22px;
   border-radius: var(--radius-pill);
   text-decoration: none;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.2px;
   transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
@@ -362,7 +369,7 @@ p {
   }
 
   .btn {
-    padding: 16px 24px;
+    padding: 10px 20px;
   }
 }
 
@@ -385,19 +392,26 @@ p {
 
 .nav-left {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
 }
 
+
 .nav-center {
   font-weight: 600;
-  width:clamp(5px, 6vw, 85px);
+  width: 5rem; 
   display:flex;
   justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  .nav-center {
+    display: none;
+  }
+}
+
 a {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.8;
   color: #fefcf6;
   text-decoration: none;
