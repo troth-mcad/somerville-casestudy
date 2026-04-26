@@ -19,7 +19,7 @@
 }
 
 body {
-  margin: 0;
+  margin:2rem;
   font-family: var(--font-sans);
   background-color: var(--bg);
   color: var(--text);
@@ -77,6 +77,12 @@ video {
   justify-self: center;
 }
 
+.site-header {
+  margin:0 50px 20 0;
+  text-align: center;
+  color: #e31936;
+  font-weight: 300;
+}
 
 /* Typography */
 
@@ -527,10 +533,11 @@ a {
 
 
 .footer-word {
-  font-size: 300px;
+  font-size: 350px;
   line-height: 0.75;
   font-weight: 800;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
+  text-align: center;
 }
 
 .footer-bottom {
@@ -630,6 +637,7 @@ a {
   .footer-word {
     font-size: 100px;
     letter-spacing: -5px;
+    text-align: center;
   }
 
   .footer-symbol {
