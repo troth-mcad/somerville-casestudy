@@ -10,10 +10,17 @@
 </head>
 <body>
 
+<aside class="side-nav">
+  <a href="#organisms">Organisms</a>
+    <p class="sub-nav">Hero Section</p> <p class="sub-nav">Footer Section</p> <p class="sub-nav">Grid Section</p>
+  <a href="#molecules">Molecules</a>
+  <a href="#atoms">Atoms</a> <p class="sub-nav">Typography Default</p> <p class="sub-nav">Body Paragraph</p> <p class="sub-nav">Buttons</p> 
+</aside>
+
   <main class="page">
 
     <!-- Typography -->
-    <section class="demo-section">
+    <section class="demo-section" id="atoms">
       <h3 class="section-title">Typography defaults</h3>
       <div class="divider"></div>
 
@@ -48,7 +55,7 @@
     </section>
 
     <!-- Body Paragraph -->
-    <section class="demo-section">
+    <section class="demo-section" id="paragraph">
       <h3 class="section-title">Body Paragraph</h3>
       <div class="divider"></div>
 
@@ -79,84 +86,6 @@
       </article>
     </section>
 
-    <!-- Hero -->
-    <section class="demo-section">
-      <h3 class="section-title">Hero Container</h3>
-      <div class="divider"></div>
-
-      <article class="component hero-component">
-        <div class="reference-image">
-          <img
-            src="img/section_hero.png"
-            srcset="img/section_hero.png"
-            alt="Hero reference"
-          />
-        </div>
-
-        <section class="hero">
-         
-         
-           <video autoplay loop muted playsinline>
-            <source
-              src="https://somervilles.s3-assets.com/Somerville-Hero-Homepage.mp4"
-              type="video/mp4"
-            />
-          </video>
-
-          <div class="hero-overlay"></div>
-
-          <button class="pause-btn" aria-label="pause video">&#x23F8;</button>
-
-          <div class="hero-content">
-            <h1>Crafting interiors across<br />the UK,<br /> Ireland &amp; beyond</h1>
-
-         <div class="hero-divider"></div>
-
-         <p>
-            Interior fit-out and luxury joinery specialists for offices,
-            hotels, retailers and residential spaces.
-         </p>
-         </div>
-
-        </section>
-        
-      </article>
-
-    </section>
-
-    <!-- Services Card -->
-    <section class="demo-section">
-      <h3 class="section-title">Services Card</h3>
-      <div class="divider"></div>
-
-      <article class="component services-component">
-        <div class="reference-image">
-          <img
-            src="img/services-card-section.png"
-            srcset="img/services-card-section.png 2x"
-            alt="Services card reference"
-          />
-        </div>
-
-        <div class="services-card-section">
-          <div class="services-card-image">
-            <img
-              src="../img/fit-out-service-block-img.jpg"
-              alt="Fit-Out"
-            />
-            <button class="plus-btn" aria-label="Open project">+</button>
-          </div>
-
-          <div class="card-text">
-            <h4>Fit-Out</h4>
-            <p>
-              Creating tailored fit-out solutions for commercial offices,
-              hospitality venues and retail spaces.
-            </p>
-          </div>
-        </div>
-      </article>
-    </section>
 
     <!-- Buttons -->
 
@@ -199,32 +128,70 @@
       </article>
     </section>
 
-    <!-- Navigation Bar -->
 
-<section class="demo-section">
-      <h3 class="section-title">Navigation Bar</h3>
+
+
+    <!-- Services Card -->
+    <section class="demo-section" id="molecules">
+      <h3 class="section-title">Services Card</h3>
       <div class="divider"></div>
 
-    <article class="component navbar-component">
-        <div class="navbar-demo">
-          <div class="reference-image">
-            <img
-              src="img/navbard-section.png"
-              srcset="img/navbard-section.png 2x"
-              alt="Navigation Bar Reference"
-            />
-          </div>
-        </div>  
-    </article>  
-  </section>  
+      <article class="component services-component">
+        <div class="reference-image">
+          <img
+            src="img/services-card-section.png"
+            srcset="img/services-card-section.png 2x"
+            alt="Services card reference"
+          />
+        </div>
 
+        <div class="services-card-section">
+          <div class="services-card-image">
+            <img
+              src="../img/fit-out-service-block-img.jpg"
+              alt="Fit-Out"
+            />
+            <button class="plus-btn" aria-label="Open project">+</button>
+          </div>
+
+          <div class="card-text">
+            <h4>Fit-Out</h4>
+            <p>
+              Creating tailored fit-out solutions for commercial offices,
+              hospitality venues and retail spaces.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    
+
+    <!-- Navigation Bar -->
+
+  <section class="demo-section">
+        <h3 class="section-title">Navigation Bar</h3>
+        <div class="divider"></div>
+
+      <article class="component navbar-component">
+          <div class="navbar-demo">
+            <div class="reference-image">
+              <img
+                src="img/navbard-section.png"
+                srcset="img/navbard-section.png 2x"
+                alt="Navigation Bar Reference"
+              />
+            </div>
+          </div>  
+      </article>  
+    </section>  
 
   <header class="hero-nav">
     <div class="nav-left">
       <i class="fa-solid fa-bars"></i>
-      <p class="swipe-link"><a href="#">What We Do</a></p>
-      <p class="swipe-link"><a href="#">Projects</a></p>
-      <p class="swipe-link"><a href="#">Work With Us</a></p>
+      <p><a href="#">What We Do</a></p>
+      <p><a href="#">Projects</a></p>
+      <p><a href="#">Work With Us</a></p>
     </div>
 
     <div class="nav-center">
@@ -266,7 +233,73 @@
 
 </section>
 
-<footer class="demo-section">
+
+
+<!-- Hero -->
+
+    <section class="demo-section" id="organisms">
+      <h3 class="section-title">Hero Section</h3>
+      <div class="divider"></div>
+
+      <article class="component hero-component">
+        <div class="reference-image">
+          <img
+            src="img/section_hero.png"
+            srcset="img/section_hero.png"
+            alt="Hero reference"
+          />
+        </div>
+
+        <section class="hero">
+         
+         
+           <video autoplay loop muted playsinline>
+            <source
+              src="https://somervilles.s3-assets.com/Somerville-Hero-Homepage.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <div class="hero-overlay"></div>
+
+          <button class="pause-btn" aria-label="pause video">&#x23F8;</button>
+
+          <div class="hero-content">
+            <h1>Crafting interiors across<br />the UK,<br /> Ireland &amp; beyond</h1>
+
+         <div class="hero-divider"></div>
+
+         <p>
+            Interior fit-out and luxury joinery specialists for offices,
+            hotels, retailers and residential spaces.
+         </p>
+         </div>
+
+        </section>
+        
+      </article>
+
+    </section>
+
+<!-- Footer -->
+
+<section class="demo-section">
+      <h3 class="section-title">Footer Section</h3>
+      <div class="divider"></div>
+
+      <article class="component footer-section">
+        <div class="reference-image">
+          <img
+            src="img/section_site-footer.png"
+            srcset="img/section_site-footer.png 2x"
+            alt="Footer Section reference"
+          />
+        </div>
+      </article>
+ </section>       
+
+
+<footer class="site-footer">
   <div class="footer-inner">
 
   <div class="footer-cta">

@@ -76,6 +76,7 @@ video {
   height: auto;
 }
 
+
 /* Typography */
 
 .type-grid {
@@ -394,12 +395,6 @@ p {
   align-items: center;
 }
 
-.nav-left p {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
 .nav-center {
   font-weight: 600;
   width: 5rem; 
@@ -473,9 +468,6 @@ a {
 }
 
 
-
-
-
 .site-footer {
   background: #fefcf6;
   padding: 16px 40px 0;
@@ -537,7 +529,7 @@ a {
   font-size: 300px;
   line-height: 0.75;
   font-weight: 800;
-  letter-spacing: -18px;
+  letter-spacing: -1px;
 }
 
 .footer-bottom {
@@ -609,9 +601,6 @@ a {
     letter-spacing: -8px;
   }
 
-  .footer-symbol {
-    font-size: 190px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -651,3 +640,54 @@ a {
   }
 }
 
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 100vh;
+  background: #231f20;
+  padding: 32px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 999;
+}
+
+.sub-nav {
+  color: var(--muted);
+  margin-bottom: -7px;
+  margin-top:-7px;
+}
+
+
+.side-nav a {
+  color: #fefcf6;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 10px;
+  padding-top:10px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.side-nav a:hover {
+  color: #e31936;
+  border-color: #e31936;
+}
+
+/* Push your page away from the fixed nav */
+.page {
+  margin-left: 230px;
+  width: calc(100% - 250px);
+}
+
+.demo-section {
+  scroll-margin-top: 32px;
+}
