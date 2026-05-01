@@ -294,19 +294,19 @@ p {
   align-items: center;
 }
 
+
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
   gap: 16px;
-  padding: 8px 22px;
-  border-radius: var(--radius-pill);
+  padding: 16px 28px;
+  border-radius: 999px;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+  font-weight: 600;
 }
+
+
 
 .arrow {
   color: var(--accent);
@@ -566,7 +566,7 @@ a {
 }
 
 .footer-bottom p {
-  margin: 0;
+  margin-bottom: .5rem;
   color: #aaa;
   font-size: 10px;
   line-height: 1.6;
@@ -703,7 +703,6 @@ html {
   border-color: #e31936;
 }
 
-/* Push your page away from the fixed nav */
 .page {
   margin-left: 230px;
   width: calc(100% - 250px);
@@ -715,8 +714,9 @@ html {
 
 .grid-section {
   gap: 40px;
-  max-width: 1700px;
+  max-width: 1000px;
   margin: 0 auto;
+  margin-left:200px;
   padding-top: 5rem;
 }
 
@@ -740,4 +740,101 @@ html {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #231f20;
   margin: 2rem;
+}
+
+
+.about-panel {
+  background: #fefcf6;
+  padding: 0 32px 48px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.about-content {
+  position: relative;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 110px 160px 120px;
+  background: #231f20;
+  color: #f7f3ec;
+  border-radius: 18px;
+}
+
+.about-intro {
+  max-width: 900px;
+}
+.about-intro p {
+  color: rgba(247, 243, 236, 0.8);
+  font-size: 17px;
+  line-height: 1.8;
+  margin-top: 0;
+}
+
+.arrow {
+  color: #e31936;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .arrow,
+.floating-cta:hover .arrow {
+  transform: translateX(5px);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  margin-top: 92px;
+}
+
+.about-card img {
+  width: 100%;
+  aspect-ratio: 1.45 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 24px;
+}
+
+.about-card h3 {
+  margin: 0 0 14px;
+  color: #f7f3ec;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.about-card p {
+  color: rgba(247, 243, 236, 0.75);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+
+@media (max-width: 1000px) {
+  .about-content {
+    padding: 72px 40px 96px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-panel {
+    padding: 0 16px 40px;
+  }
+
+  .about-content {
+    padding: 48px 24px 80px;
+  }
+
+  .about-intro h2 {
+    font-size: 36px;
+  }
+
+  .about-intro p,
+  .about-card p {
+    font-size: 16px;
+  }
 }
