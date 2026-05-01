@@ -152,12 +152,15 @@ p {
 /* Hero */
 
 .hero {
-  position: relative; 
-  margin-top: -10rem;
-  height: 90vh;
-  width: 100%;
+  position: relative;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3rem;
+  height: 85vh; 
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 20pt;
+  background: #231f20;
 }
 
 
@@ -400,9 +403,11 @@ p {
 
 
 .nav-left {
-  position:absolute;
+  position:relative;
   gap: 12px;
   align-items: center;
+  display:flex;
+  justify-content: space-around;
 }
 
 .nav-center {
@@ -710,7 +715,7 @@ html {
 
 .grid-section {
   gap: 40px;
-  max-width: 1300px;
+  max-width: 1700px;
   margin: 0 auto;
   padding-top: 5rem;
 }
@@ -720,7 +725,7 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  max-width: 1300px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 40px 0;
 }
