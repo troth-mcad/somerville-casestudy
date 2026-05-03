@@ -1,360 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content ="ie=edge">
-    <script src="https://kit.fontawesome.com/2e2692bf3f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css" />
-    <title> Home | Somerville </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <script src="https://kit.fontawesome.com/2e2692bf3f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css" />
+
+  <title>Home | Somerville</title>
 </head>
 
 <body>
-
-
+  <!-- Hero -->
   <section class="hero">
+    <header class="hero-nav">
+      <nav class="nav-left" aria-label="Main navigation">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <a href="#">What We Do</a>
+        <a href="#">Projects</a>
+        <a href="#">Work With Us</a>
+      </nav>
 
- <header class="hero-nav">
-    <div class="nav-left">
-      <i class="fa-solid fa-bars"></i>
-      <p><a href="#">What We Do</a></p>
-      <p><a href="#">Projects</a></p>
-      <p><a href="#">Work With Us</a></p>
-    </div>
-
-    <div class="nav-center">
-        <img src="img/site-logo.png" alt="Somerville Logo">
-    </div>
-
-    <div class="nav-right">
-      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-      <a href="#" class="btn btn-dark">
-        Start Your Project <span class="arrow">→</span>
+      <a href="#" class="nav-logo" aria-label="Somerville Home">
+        <img src="img/site-logo.png" alt="Somerville Logo" />
       </a>
-    </div>
-  </header>
-         
-           <video autoplay loop muted playsinline>
-            <source
-              src="https://somervilles.s3-assets.com/Somerville-Hero-Homepage.mp4"
-              type="video/mp4"
-            />
-          </video>
 
-          <div class="hero-overlay"></div>
+      <div class="nav-right">
+        <a href="#" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </a>
 
-          <button class="pause-btn" aria-label="pause video">&#x23F8;</button>
+        <a href="#" class="btn btn-dark">
+          Start Your Project <span class="arrow">→</span>
+        </a>
+      </div>
+    </header>
 
-          <div class="hero-content">
-            <h1>Crafting interiors across<br />the UK, Ireland &amp; beyond</h1>
+    <video autoplay loop muted playsinline>
+      <source src="https://somervilles.s3-assets.com/Somerville-Hero-Homepage.mp4" type="video/mp4" />
+    </video>
 
-         <div class="hero-divider"></div>
+    <div class="hero-overlay"></div>
 
-         <p>
-            Interior fit-out and luxury joinery specialists for offices,
-            hotels, retailers and residential spaces.
-         </p>
-         </div>
+    <button class="pause-btn" aria-label="Pause video">⏸</button>
 
-    </section>
-
-<section class="services-content">    
-
-  <h2 class="about-intro">Interior fit-out, joinery manufacturing and commercial environmental solutions. </h2>
-
-  <div class="services-grid">
-
-  <article class="service-card">
-    <div class="services-card-image">
-      <img src="img/fit-out-service-block-img.jpg" alt="Fit-Out">
-      <button class="plus-btn">+</button>
-    </div>
-
-
-    <div class="card-text">
-      <h4>Fit-Out</h4>
+    <div class="hero-content">
+      <h1>Crafting interiors across<br />the UK, Ireland &amp; beyond</h1>
+      <div class="hero-divider"></div>
       <p>
-        Creating tailored fit-out solutions for commercial offices,
-        hospitality venues and retail spaces.
+        Interior fit-out and luxury joinery specialists for offices,
+        hotels, retailers and residential spaces.
       </p>
     </div>
-  </article>
+  </section>
 
-  <article class="service-card">
-    <div class="services-card-image">
-      <img src="img/Joinery-manufacturing-services-block-image.jpg" alt="Joinery">
-      <button class="plus-btn">+</button>
+  <!-- Services -->
+  <section class="services-section">
+    <h2>Interior fit-out, joinery manufacturing and commercial environmental solutions.</h2>
+
+    <div class="card-grid">
+      <article class="service-card">
+        <div class="card-image-tall">
+          <img src="img/fit-out-service-block-img.jpg" alt="Fit-Out" />
+          <button class="plus-btn" aria-label="Learn more about Fit-Out">+</button>
+        </div>
+
+        <div class="card-text">
+          <h4>Fit-Out</h4>
+          <p>
+            Creating tailored fit-out solutions for commercial offices,
+            hospitality venues and retail spaces.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-image-tall">
+          <img src="img/Joinery-manufacturing-services-block-image.jpg" alt="Joinery" />
+          <button class="plus-btn" aria-label="Learn more about Joinery">+</button>
+        </div>
+
+        <div class="card-text">
+          <h4>Joinery</h4>
+          <p>
+            Bespoke joinery solutions crafted with precision for modern
+            interior environments.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-image-tall">
+          <img src="img/Commercial-Environmental-Solutions-home-page-image3.jpg" alt="Commercial environmental solutions" />
+          <button class="plus-btn" aria-label="Learn more about Commercial Environmental Solutions">+</button>
+        </div>
+
+        <div class="card-text">
+          <h4>Environmental Solutions</h4>
+          <p>
+            Sustainable commercial solutions designed to reduce waste and
+            support a greener future.
+          </p>
+        </div>
+      </article>
     </div>
+  </section>
 
-    <div class="card-text">
-      <h4>Joinery</h4>
-      <p>
-        Bespoke joinery solutions crafted with precision for modern
-        interior environments.
-      </p>
-    </div>
-  </article>
-
-  <article class="service-card">
-    <div class="services-card-image">
-      <img src="img/Commercial-Environmental-Solutions-home-page-image3.jpg" alt="Design">
-      <button class="plus-btn">+</button>
-    </div>
-
-    <div class="card-text">
-      <h4>Design</h4>
-      <p>
-        Innovative commercial design concepts tailored to your brand,
-        space and workflow.
-      </p>
-    </div>
-  </article>
-</div>
-
-</section>
-
-<section class="about-panel">
-  <div class="about-content">
-
-    <div class="about-intro">
-      <h2>
-        Delivering the finest work, across the<br>
-        UK, Europe &amp; beyond
-      </h2>
-
+  <!-- About -->
+  <section class="dark-section">
+    <div class="section-intro">
+      <h2>Delivering the finest work, across the<br />UK, Europe &amp; beyond</h2>
       <p>
         Our clients come from far and wide. They trust us to provide quality
         craftsmanship and a reliable service.
       </p>
-
       <a href="#" class="btn btn-light">
         About Us <span class="arrow">→</span>
       </a>
     </div>
 
-    <div class="about-grid">
-
-      <article class="about-card">
-        <img src="img/fit-out-service-block-img.jpg" alt="People working together">
-
+    <div class="card-grid">
+      <article class="info-card">
+        <img src="img/passionate-people-home-page-1.jpg" alt="People working together" />
         <h4>Passionate People</h4>
         <p>
-          We have a unique blend of people within Somerville. They show passion
-          for their work, what they create, and how it’s delivered. Our company
-          culture fosters dedication and brilliance among our team.
+          We have a unique blend of people within Somerville. They show passion for their work, what they create, and how it’s delivered. Our company culture fosters dedication and brilliance among our team.
         </p>
       </article>
 
-      <article class="about-card">
-        <img src="img/Joinery-manufacturing-services-block-image.jpg" alt="Manufacturing machinery">
-
+      <article class="info-card">
+        <img src="img/Innovation-ups-block.jpg" alt="Innovation" />
         <h4>Innovation</h4>
         <p>
-          We have invested in new facilities, advanced machinery and technology
-          to develop and enhance our work methods. This approach increases
-          efficiency while maintaining exceptional quality.
+       We have invested in new facilities, advanced machinery and technology to develop and enhance our work methods. This approach increases efficiency while maintaining exceptional quality.
         </p>
       </article>
 
-      <article class="about-card">
-        <img src="img/Commercial-Environmental-Solutions-home-page-image3.jpg" alt="Workshop team member">
-
+      <article class="info-card">
+        <img src="img/Diversity-ups-block.jpg" alt="Diversity and Inclusion" />
         <h4>Diversity &amp; Inclusion</h4>
         <p>
-          Diversity and inclusion are essential as we continue to grow the company.
-          Somerville is committed to fostering a diverse, safe, and inclusive
-          workspace for all team members.
+          Diversity and inclusion are essential as we continue to grow the company. Somerville is committed to fostering a diverse, safe, and inclusive workspace for all team members.  
         </p>
       </article>
-
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Sustainability -->
+  <section class="split-text-section">
+    <div class="section-intro">
+      <h2>Closing the loop for a greener, brighter future.</h2>
+    </div>
 
-<section class="text-block">
-
-<div class="about-intro">
-      <h2>
-     Closing the loop for a greener, brighter future.
-      </h2>
-
-</div>
-
-
-  <div class="paragraph-section">
-           <p>
-            With a growing emphasis on corporate environmental impact, we understand
-            the impact of our work and recognise that our clients' needs are changing.
-          </p>
-          <p>
-            We have designed a sustainable service for clients who prioritise their
-            commercial impact. The process involves separating and recycling wood,
-            metal and plastics to achieve zero waste to landfill certification.
-          </p>
-          <p>
-            Sustainable manufacturing makes ecological and commercial sense, so we
-            strive to minimise waste and create efficiencies.
-          </p>
-
+    <div class="paragraph-section">
+      <p>
+        With a growing emphasis on corporate environmental impact, we understand
+        the impact of our work and recognise that our clients' needs are changing.
+      </p>
+      <p>
+        We have designed a sustainable service for clients who prioritise their
+        commercial impact. The process involves separating and recycling wood,
+        metal and plastics to achieve zero waste to landfill certification.
+      </p>
+      <p>
+        Sustainable manufacturing makes ecological and commercial sense, so we
+        strive to minimise waste and create efficiencies.
+      </p>
 
       <a href="#" class="btn btn-rev">
         Our Impact <span class="arrow">→</span>
       </a>
+    </div>
+  </section>
 
-        </div>
-
-</section>
-
-<section class="about-content">
-
-<div class="about-grid">
-
-      <article class="about-card">
-
+  <!-- Projects -->
+  <section class="dark-section">
+    <div class="card-grid projects-grid">
+      <article class="info-card text-card">
         <h2>Inspirational interior fit-outs and specialist joinery</h2>
         <p>
-          Discover some of our recent projects, showcasing distinct and memorable interior spaces. 
+          Discover some of our recent projects, showcasing distinct and
+          memorable interior spaces.
         </p>
-
         <a href="#" class="btn btn-light">
-        About Us <span class="arrow">→</span>
+         All Projects <span class="arrow">→</span>
         </a>
       </article>
 
-      <article class="about-card">
-        <img src="img/Joinery-manufacturing-services-block-image.jpg" alt="Manufacturing machinery">
+      <article class="service-card">
+        <div class="card-image">
+          <img src="img/portfolio-image-1.png" alt="Corresponding Image for Porfolio block 1" />
+          <button class="plus-btn" aria-label="Learn more about Joinery">+</button>
+        </div>
 
-        <h4>Innovation</h4>
-        <p>
-          We have invested in new facilities, advanced machinery and technology
-          to develop and enhance our work methods. This approach increases
-          efficiency while maintaining exceptional quality.
-        </p>
+        <div class="card-text">
+          <h4>Sustainably focused office fit-out forglobal professionals</h4>
+          <p>
+           <b>EY</b> | Bedford House, Belfast
+          </p>
+        </div>
       </article>
 
-      <article class="about-card">
-        <img src="img/Commercial-Environmental-Solutions-home-page-image3.jpg" alt="Workshop team member">
+      <article class="service-card">
+        <div class="card-image">
+          <img src="img/portfolio-image-2.png" alt="Corresponding Image for Porfolio block 2" />
+          <button class="plus-btn" aria-label="Learn more about Joinery">+</button>
+        </div>
 
-        <h4>Diversity &amp; Inclusion</h4>
-        <p>
-          Diversity and inclusion are essential as we continue to grow the company.
-          Somerville is committed to fostering a diverse, safe, and inclusive
-          workspace for all team members.
-        </p>
+        <div class="card-text">
+          <h4>Industrial fit-out for global innovation consultants</h4>
+          <p>
+            <b>PA Consulting</b> | The Printworks, Belfast
+          </p>
+        </div>
       </article>
 
+      <article class="service-card">
+        <div class="card-image">
+          <img src="img/portfolio-image-3.png" alt="Corresponding Image for Porfolio block 3" />
+          <button class="plus-btn" aria-label="Learn more about Commercial Environmental Solutions">+</button>
+        </div>
 
-      <article class="about-card">
-        <img src="img/fit-out-service-block-img.jpg" alt="People working together">
-
-        <h4>Passionate People</h4>
-        <p>
-          We have a unique blend of people within Somerville. They show passion
-          for their work, what they create, and how it’s delivered. Our company
-          culture fosters dedication and brilliance among our team.
-        </p>
+        <div class="card-text">
+          <h4>Inspiring and flexible office space witha touch of city luxury</h4>
+          <p>
+          <b>Metro</b> | Metro Building, Belfast
+          </p>
+        </div>
       </article>
 
-      <article class="about-card">
-        <img src="img/Joinery-manufacturing-services-block-image.jpg" alt="Manufacturing machinery">
+      <article class="service-card">
+        <div class="card-image">
+          <img src="img/portfolio-image-4.png" alt="Corresponding Image for Porfolio block 4" />
+          <button class="plus-btn" aria-label="Learn more about Joinery">+</button>
+        </div>
 
-        <h4>Innovation</h4>
-        <p>
-          We have invested in new facilities, advanced machinery and technology
-          to develop and enhance our work methods. This approach increases
-          efficiency while maintaining exceptional quality.
-        </p>
+        <div class="card-text">
+          <h4>Design & build fit-out for international consultants</h4>
+          <p>
+           <b>Jacobs</b> | Dublin
+          </p>
+        </div>
       </article>
 
-      <article class="about-card">
-        <img src="img/Commercial-Environmental-Solutions-home-page-image3.jpg" alt="Workshop team member">
+      <article class="service-card">
+        <div class="card-image">
+          <img src="img/portfolio-image-5.png" alt="Corresponding Image for Porfolio block 5" />
+          <button class="plus-btn" aria-label="Learn more about Commercial Environmental Solutions">+</button>
+        </div>
 
-        <h4>Diversity &amp; Inclusion</h4>
-        <p>
-          Diversity and inclusion are essential as we continue to grow the company.
-          Somerville is committed to fostering a diverse, safe, and inclusive
-          workspace for all team members.
-        </p>
+        <div class="card-text">
+          <h4>Bespoke office joinery & fit-out formultinational tax consultants</h4>
+          <p>
+            <b>RSM</b> | The Ewart Building
+          </p>
+        </div>
       </article>
+      </div>
 
-    </div>
-    </section>
+  </section>
 
+  <!-- Image CTA -->
+  <section class="image-cta">
+    <img src="img/New-facility-full-media-block.jpg" alt="Cover Image of New facility" />
+    <div class="hero-overlay"></div>
 
-
-    <section class="hero-image">
-         
-         <img src="img/fit-out-service-block-img.jpg" alt="People working together">
-
-          <div class="hero-overlay"></div>
-
-          <div class="hero-content">
-            <h2>Cutting-edge new facilities <br> enhanced with innovation and <br> technology</h2>
-
-        <a href="#" class="btn btn-light">
+    <div class="hero-content">
+      <h2>Cutting-edge new facilities<br />enhanced with innovation and<br />technology</h2>
+      <a href="#" class="btn btn-light">
         Take a Look <span class="arrow">→</span>
-        </a>
-     
-         </div>
+      </a>
+    </div>
+  </section>
 
-    </section>
-
-
-
-<footer class="site-footer">
-  <div class="footer-inner">
-
-  <div class="footer-cta">
-  <h3>
-    Ready to start your next project?
-    <a href="#" class="swipe-link">Talk to us</a>
-  </h3>
-  </div>
-
-    <nav class="footer-nav">
-      <a href="#">What We Do</a>
-      <a href="#">Projects</a>
-      <a href="#">Journal</a>
-      <a href="#">About</a>
-      <a href="#">Work With Us</a>
-      <a href="#">Contact</a>
-    </nav>
-
-    <div class="footer-brand" aria-hidden="true">
-
-      <span class="footer-word">Somerville</span>
+  <!-- History -->
+  <section class="about-section">
+    <div class="about-image">
+      <img src="img/about-section-image.png" alt="Wooden furniture interior" />
     </div>
 
-    <div class="footer-bottom">
+    <div class="about-text">
+      <h2>Crafting beautiful furniture and interior workspaces for over 50 years.</h2>
       <p>
-        © Copyright 2026 Somerville
-        <span>|</span>
-        <a href="#">Terms &amp; Conditions</a>
-        <span>|</span>
-        <a href="#">Privacy Policy</a>
-        <span>|</span>
-        <a href="#">Manage Cookies</a>
-        <span>|</span>
-        <a href="#">Website by Eyekiller</a>
+        Somerville was founded in 1970 and has been delivering specialist
+        joinery and fit-out projects across the UK and Ireland. Over the past
+        50 years, the company has experienced significant growth.
       </p>
 
-      <div class="footer-badges">
-        <img src="../img/badge-1.svg" alt="UKAS Management Systems badge" />
-        <img src="../img/badge-2.svg" alt="AUVA ISO certified badge" />
-        <img src="../img/badge-3.svg" alt="UKAS Management Systems badge" />
+      <a href="#" class="btn btn-rev">
+        Our Story <span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cta">
+        <h3>
+          Ready to start your next project?
+          <a href="#" class="swipe-link">Talk to us</a>
+        </h3>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#">What We Do</a>
+        <a href="#">Projects</a>
+        <a href="#">Journal</a>
+        <a href="#">About</a>
+        <a href="#">Work With Us</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="footer-brand" aria-hidden="true">
+        <span>Somerville</span>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © Copyright 2026 Somerville
+          <span>|</span>
+          <a href="#">Terms &amp; Conditions</a>
+          <span>|</span>
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Manage Cookies</a>
+          <span>|</span>
+          <a href="#">Website by Eyekiller</a>
+        </p>
+
+        <div class="footer-badges">
+          <img src="img/badge-1.svg" alt="UKAS Management Systems badge" />
+          <img src="img/badge-2.svg" alt="AUVA ISO certified badge" />
+          <img src="img/badge-3.svg" alt="UKAS Management Systems badge" />
+        </div>
       </div>
     </div>
-
-  </div>
-</footer>
-
-
-
-
-
-
-
+  </footer>
 </body>
-
 </html>
